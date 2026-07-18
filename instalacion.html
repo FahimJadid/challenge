@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Instrucciones de Configuración del Proyecto de Scraping</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+        h1, h2 { color: #2c3e50; }
+        pre { background-color: #f4f4f4; padding: 10px; overflow-x: auto; border-radius: 5px; }
+        code { font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; }
+        ol { padding-left: 20px; }
+        li { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <h1>Instrucciones para Configurar y Ejecutar el Proyecto de Scraping</h1>
+
+    <p>Este documento describe cómo poner en marcha el script de scraping en tu entorno local.</p>
+
+    <h2>Requisitos</h2>
+    <ul>
+        <li>Tener <a href="https://nodejs.org/">Node.js</a> y `npm` (que viene incluido con Node.js) instalados en tu sistema.</li>
+    </ul>
+
+    <h2>Pasos de Configuración y Ejecución</h2>
+    <ol>
+        <li>
+            <strong>Crea una carpeta para el proyecto:</strong>
+            <p>En tu computadora, crea una nueva carpeta donde guardarás los archivos del proyecto. Puedes llamarla como prefieras, por ejemplo, <code>eldorado-scraper</code>.</p>
+        </li>
+        <li>
+            <strong>Crea los archivos necesarios:</strong>
+            <p>Dentro de la carpeta que creaste (por ejemplo, <code>eldorado-scraper</code>), crea dos archivos nuevos con estos nombres exactos:</p>
+            <ul>
+                <li><code>package.json</code></li>
+                <li><code>evaluation_spider.js</code></li>
+            </ul>
+        </li>
+        <li>
+            <strong>Copia el contenido:</strong>
+            <p>Abre los archivos <code>package.json</code> y <code>evaluation_spider.js</code> con un editor de texto simple (como Notepad, VS Code, Sublime Text, etc.). Pega el contenido correspondiente que te fue proporcionado anteriormente para cada uno de estos archivos. Asegúrate de guardar los cambios después de pegar el contenido.</p>
+            <p>(Nota: El contenido de estos archivos te fue dado en respuestas anteriores. Si necesitas que los repita, por favor avísame).</p>
+        </li>
+        <li>
+            <strong>Abre la Terminal o Símbolo del Sistema:</strong>
+            <p>Abre la aplicación de Terminal (en sistemas operativos como macOS o Linux) o el Símbolo del sistema / PowerShell (en sistemas operativos Windows).</p>
+        </li>
+        <li>
+            <strong>Navega a la carpeta del proyecto:</strong>
+            <p>Usa el comando <code>cd</code> (change directory) para moverte al directorio donde guardaste la carpeta del proyecto. Por ejemplo, si la creaste directamente en tu carpeta de usuario y la llamaste <code>eldorado-scraper</code>, el comando sería:</p>
+            <pre><code>cd eldorado-scraper</code></pre>
+            <p>Presiona Enter.</p>
+        </li>
+        <li>
+            <strong>Instala las dependencias:</strong>
+            <p>Una vez que la terminal esté ubicada dentro de la carpeta de tu proyecto, ejecuta el siguiente comando:</p>
+            <pre><code>npm install</code></pre>
+            <p>Presiona Enter. Este comando lee el archivo <code>package.json</code> y descarga las librerías <code>axios</code> y <code>cheerio</code> necesarias para que el script funcione. Esto creará una nueva carpeta llamada <code>node_modules</code> dentro de tu proyecto.</p>
+        </li>
+        <li>
+            <strong>Ejecuta el script:</strong>
+            <p>Finalmente, para iniciar el script <code>evaluation_spider.js</code>, usa el comando:</p>
+            <pre><code>npm start</code></pre>
+            <p>Presiona Enter. Este comando utiliza el script de "inicio" definido en el archivo <code>package.json</code> y ejecuta el archivo <code>evaluation_spider.js</code> usando Node.js. Verás la salida del script directamente en la ventana de la terminal.</p>
+        </li>
+    </ol>
+
+    <p>¡Eso es todo! Con estos pasos, tendrás el entorno básico listo para empezar a añadir la lógica de scraping específica para extraer los datos requeridos por el desafío.</p>
+
+</body>
+</html>

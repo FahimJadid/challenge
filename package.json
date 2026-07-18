@@ -1,0 +1,23 @@
+{
+  "name": "eldorado-scraper",
+  "version": "1.0.0",
+  "description": "A Node.js script to scrape products from El Dorado (eldorado.com.uy).",
+  "main": "evaluation_spider.js",
+  "scripts": {
+    "start": "node evaluation_spider.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "scraping",
+    "nodejs",
+    "axios",
+    "cheerio",
+    "eldorado"
+  ],
+  "author": "Fahim Al Jadid",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.18.1",
+    "cheerio": "^1.2.0"
+  }
+}
